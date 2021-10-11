@@ -1,29 +1,15 @@
 import React from "react";
+import ProjectSummary from "./ProjectSummary";
 
-export default function ProjectsList() {
+const ProjectList = () => {
   return (
-    <div className="section project-list">
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content  grey-darken-3">
-          <span className="card-title">Project Title</span>
-          <p>Posted by Toka Abdulhamied</p>
-          <p className="grey-text">Forth October</p>
-        </div>
-      </div>
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content  grey-darken-3">
-          <span className="card-title">Project Title</span>
-          <p>Posted by Toka Abdulhamied</p>
-          <p className="grey-text">Forth October</p>
-        </div>
-      </div>
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content  grey-darken-3">
-          <span className="card-title">Project Title</span>
-          <p>Posted by Toka Abdulhamied</p>
-          <p className="grey-text">Forth October</p>
-        </div>
-      </div>
+    <div className="project-list section">
+      <ProjectSummary />
+      <ProjectSummary />
+      <ProjectSummary />
+      <ProjectSummary />
     </div>
   );
-}
+};
+
+export default ProjectList;
