@@ -3,13 +3,13 @@ import Notifications from "./Notifications";
 import ProjectsList from "../projects/ProjectsList";
 import { connect } from "react-redux";
 
-const Dashboard = (props) => {
-  console.log(props.projects);
+const Dashboard = ({ projects }) => {
+  console.log(projects);
   return (
     <div className="dashboard container">
       <div className="row">
         <div className="col s12 m6">
-          <ProjectsList />
+          <ProjectsList projects={projects} />
         </div>
         <div className="col s12 m5">
           <Notifications />
